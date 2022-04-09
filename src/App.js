@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Menu from "./components/menu/menu.component";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const categories = [
+    {
+      id: 1,
+      title: "Indoor",
+      imageBack: "images/indoor.jpg",
+    },
+    {
+      id: 2,
+      title: "Outdoor",
+      imageBack: "images/outdoor.jpg",
+    },
+    {
+      id: 3,
+      title: "Water plants",
+      imageBack: "images/water.jpg",
+    },
+    {
+      id: 4,
+      title: "Bamboo",
+      imageBack: "images/bamboo.jpg",
+    },
+    {
+      id: 5,
+      title: "Exotic",
+      imageBack: "images/exotic.jpg",
+    },
+  ];
+
+  return <Menu categories={categories} />;
+};
 
 export default App;
