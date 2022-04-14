@@ -1,0 +1,19 @@
+.authentication-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 30px auto;
+
+  .information {
+    .comp-title {
+      font-size: 1.5em;
+      color: #55b43d;
+      font-weight: bold;
+      font-family: "Permanent Marker";
+      margin: 10px auto;
+    }
+    .info-image {
+      width: 120px;
+    }
+  }
+}
