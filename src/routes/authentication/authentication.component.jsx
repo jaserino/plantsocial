@@ -11,7 +11,7 @@ const Authentication = () => {
       <div className="authentication-container">
         <div className="information">
           <p className="comp-title">plant social</p>
-          <img className="info-image" src={image} />
+          <img className="info-image" src={image} alt="logo of company" />
         </div>
         <SignUpForm />
         <SignInForm />

@@ -1,15 +1,15 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
 
 import FormInput from "../input/form-input.component";
 import Button from "../button/button.component";
-import "./sign-in.styles.scss";
 
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
+
+import "./sign-in.styles.scss";
 
 //creating an object from useState that allows us to keep track of multiple fields
 const defaultFormFields = {
@@ -27,19 +27,14 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
+    await signInWithGooglePopup();
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await signInAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
-
+      await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
     } catch (error) {
       switch (error.code) {

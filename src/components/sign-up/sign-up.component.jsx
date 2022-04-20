@@ -1,14 +1,14 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
 
 import FormInput from "../input/form-input.component";
 import Button from "../button/button.component";
-import "./sign-up.styles.scss";
 
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
+
+import "./sign-up.styles.scss";
 
 //creating an object from useState that allows us to keep track of multiple fields
 const defaultFormFields = {
