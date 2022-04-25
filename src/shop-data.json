@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Bird's-nest fern",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644522/indoor/aspleniumnidus_xurkyc.jpg",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Decorative Banana",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644525/indoor/banana_opzwnz.jpg",
+    "price": 18
+  },
+  {
+    "id": 3,
+    "name": "Dracaena",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644528/indoor/dracaena_kyzc7n.jpg",
+    "price": 35
+  },
+  {
+    "id": 4,
+    "name": "Ficus",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650645260/indoor/ficus_r2tccb.jpg",
+    "price": 25
+  },
+  {
+    "id": 5,
+    "name": "Chinese money plant",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644533/indoor/heartleafphilodendron_yqtpbk.jpg",
+    "price": 18
+  },
+  {
+    "id": 6,
+    "name": "Swiss cheese plant",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644535/indoor/monsteradeliciosa_mnxrhm.jpg",
+    "price": 14
+  },
+  {
+    "id": 7,
+    "name": "Philodendron",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644537/indoor/philodendron_h24xgo.jpg",
+    "price": 18
+  },
+  {
+    "id": 8,
+    "name": "Heartleaf Philodendron",
+    "imagePic": "https://res.cloudinary.com/diitsfgbw/image/upload/v1650644539/indoor/pileapeperomioides_b1bnzk.jpg",
+    "price": 14
+  }
+]
