@@ -1,0 +1,21 @@
+.category-preview-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  img {
+    width: 350px;
+  }
+}
+
+.shop-title {
+  font-size: 28px;
+  cursor: pointer;
+  margin: 30px;
+}
