@@ -1,15 +1,14 @@
 import { useState } from "react";
 
 import FormInput from "../input/form-input.component";
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 
-import "./sign-in.styles.scss";
+import { SignUpContainer, ButtonContainer } from "./sign-in.styles.jsx";
 
 //creating an object from useState that allows us to keep track of multiple fields
 const defaultFormFields = {
@@ -57,7 +56,7 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignUpContainer>
       <h2>Already registered?</h2>
       <span>Sign in below</span>
       <form onSubmit={handleSubmit}>
@@ -78,14 +77,18 @@ const SignInForm = () => {
           name="password"
           value={password}
         />
-        <div className="buttons-container">
-          <Button buttonClasses="submit">Sign In</Button>
-          <Button buttonClasses="google" onClick={signInWithGoogle}>
+        <ButtonContainer>
+          <Button type="submit">Sign In</Button>
+          <Button
+            buttonType={BUTTON_TYPE_CLASSES.google}
+            type="button"
+            onClick={signInWithGoogle}
+          >
             Google sign in
           </Button>
-        </div>
+        </ButtonContainer>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 

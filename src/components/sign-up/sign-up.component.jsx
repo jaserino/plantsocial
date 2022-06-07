@@ -8,7 +8,7 @@ import {
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 
-import "./sign-up.styles.scss";
+import { SignUpContainer } from "./sign-up.styles.jsx";
 
 //creating an object from useState that allows us to keep track of multiple fields
 const defaultFormFields = {
@@ -58,7 +58,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignUpContainer>
       <h2>Create new account</h2>
       <span>It's quick and easy</span>
       <form onSubmit={handleSubmit}>
@@ -99,7 +99,7 @@ const SignUpForm = () => {
         />
         <Button buttonClasses="submit">Sign up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
