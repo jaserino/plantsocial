@@ -5,7 +5,6 @@ Live at https://plantsocial.netlify.app/
 > growing a community
 > https://plantsocial.netlify.app/
 
-## ![Project Image](image.png)
 
 ### Table of Contents
 
