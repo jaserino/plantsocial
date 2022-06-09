@@ -1,5 +1,7 @@
 # plantsocial
 
+Live at https://plantsocial.netlify.app/
+
 > growing a community
 > https://plantsocial.netlify.app/
 
